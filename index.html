@@ -1,13 +1,34 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
 
-<head>
-    <title>Title</title>
-    <meta charset="utf-8">
-</head>
+    <head>
 
-<body>
-    <h1>lab1</h1>
-</body>
+        <title>lab1</title>
+        <meta charset="utf-8">
+
+    </head>
+
+    <body>
+        
+        <!-- Part II -->
+
+        <input  id  = "input" placeholder = "Text">
+        <button id  = "btn"   onclick = "btnClicked()">Click me</button>
+        <div    id  = "output"></div>
+
+        <script>
+            function btnClicked() 
+            {
+                let text = document.getElementById("input");
+                document.getElementById("output").innerHTML = text.value;
+                text.value = "";
+            }
+        </script>
+        
+        <!-- Part I -->
+        
+        <script src = "script.js"></script>
+
+    </body>
 
 </html>
